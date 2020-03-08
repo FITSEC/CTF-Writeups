@@ -35,3 +35,13 @@ So it appears as though commands were being issued across a network connection v
 At this point, it was back to the PCAP to see if I had missed something. I searched high and low and finally found reference of the IP address of the C2 channel. It appears the IP address has changed and we need to do a DNS query for dns.google.com to find our target machine.
 
 ![DNS Query](img/dns.png)
+
+# Crafting DNS queries with Scapy
+
+The first thing I did was read in the pcap into scapy and print all of the fields of the query packet. This allows me to quickly see what fields I may need to set in my crafted query.
+
+![Query](img/query.png)
+
+Next, I crafted my packet with the fields indicated in the image below. Once I sent the packet, I received a reply and found the IP address of the machine I need to communicate with to be 3.88.57.227.
+
+![Answer](img/answer.png)
