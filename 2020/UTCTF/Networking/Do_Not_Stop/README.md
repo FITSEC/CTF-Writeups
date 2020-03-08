@@ -45,3 +45,11 @@ The first thing I did was read in the pcap into scapy and print all of the field
 Next, I crafted my packet with the fields indicated in the image below. Once I sent the packet, I received a reply and found the IP address of the machine I need to communicate with to be 3.88.57.227.
 
 ![Answer](img/answer.png)
+
+### Retrieving the Flag
+
+Now we are equipped with everything we need to retreive the flag. All we have to do is craft our packet to be sent to the server we found the IP address for. Repeating the steps above, we craft the packet with a qname of "Y2F0IGZsYWcudHh0", the base64 encoded representation of "cat flag.txt" and send the packet off.
+
+![flag](img/flag.png)
+
+> utflag{$al1y_s3L1S_sE4_dN$}
