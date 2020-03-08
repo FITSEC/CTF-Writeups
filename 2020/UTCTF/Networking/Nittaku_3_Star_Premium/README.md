@@ -1,4 +1,4 @@
-Do Not Stop
+Nittaku 3 Star Premium
 =====
 
 #### Solver: ap3xsh0t
