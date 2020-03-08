@@ -5,7 +5,7 @@ Do Not Stop
 
 > "One of my servers was compromised, but I can't figure it out. See if you can solve it for me!"
 
-# Methodology
+### Methodology
 First thing I did was open the PCAP up in wireshark to see any strange traffic. Everything looked relatively normal except for one thing: I spotted DNS traffic querying for a domain name that was base 64 encoded. I quickly decoded the string and found that the string was actually a command. The DNS reply also had base64 encoded traffic, which ended up being the output of the command.
 
 > ls -la
@@ -30,13 +30,13 @@ First thing I did was open the PCAP up in wireshark to see any strange traffic. 
 
 So it appears as though commands were being issued across a network connection via DNS query. We can also see the location of flag.txt, which is what we are trying to retrieve. So naturally, I craft a scapy DNS packet to the same IP address as contained in the DNS query with the commands, base64 encode the command in the query field, and send it off, but it doesn't work.
 
-# Finding the right IP address
+### Finding the right IP address
 
 At this point, it was back to the PCAP to see if I had missed something. I searched high and low and finally found reference of the IP address of the C2 channel. It appears the IP address has changed and we need to do a DNS query for dns.google.com to find our target machine.
 
 ![DNS Query](img/dns.png)
 
-# Crafting DNS queries with Scapy
+### Crafting DNS queries with Scapy
 
 The first thing I did was read in the pcap into scapy and print all of the fields of the query packet. This allows me to quickly see what fields I may need to set in my crafted query.
 
