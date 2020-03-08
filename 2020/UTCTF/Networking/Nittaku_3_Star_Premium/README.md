@@ -33,3 +33,7 @@ picture = base64.b64decode(newPic)
 fd = open('flag.png', 'wb')
 fd.write(picture)
 ```
+### Reading the Flag
+Again, I falsely assumed that the result of the decode would produce a png. Instead, it produced a gzip compressed archive. After gunzipping the archive, we can read the flag.
+
+> utflag{p1Ng@b13_f1aG$}
