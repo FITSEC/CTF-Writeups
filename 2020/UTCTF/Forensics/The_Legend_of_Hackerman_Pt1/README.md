@@ -15,7 +15,11 @@ We are given an image that appears to be corrupted. Looks like a standard missin
 
 ![hex](img/hex.png)
 
-We can clearly see the magic bytes are missing. But how can we fix it? Since we have vim open using xxd, we can edit the bytes. After some quick research we see that we need to add the PNG signature of "0x89 0x50 0x4E 0x47 0x0D 0x0A 0x1A 0x0A", of which half of the bytes are already correct. Too easy. After editing the image, we exit from xxd and save the image.
+We can clearly see the magic bytes are missing. But how can we fix it? Since we have vim open using xxd, we can edit the bytes. After some quick research we see that we need to add the PNG signature of "0x89 0x50 0x4E 0x47 0x0D 0x0A 0x1A 0x0A", of which half of the bytes are already correct. 
+
+![edit](img/edit.png)
+
+Too easy. After editing the image, we exit from xxd and save the image.
 
 > !%xxd -r
 
