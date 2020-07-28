@@ -1,6 +1,5 @@
 Spectre
 =====
-#### Solver: ap3xsh0t
 
 ## Category: Forensics
 
