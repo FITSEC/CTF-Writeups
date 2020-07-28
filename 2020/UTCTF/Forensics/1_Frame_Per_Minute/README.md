@@ -1,6 +1,5 @@
 1 Frame Per Minute
 =====
-#### Solver: ap3xsh0t
 
 ## Category: Forensics
 
