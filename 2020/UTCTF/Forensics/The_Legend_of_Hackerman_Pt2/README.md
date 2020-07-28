@@ -1,6 +1,5 @@
 The Legend of Hackerman Pt. 2
 =====
-#### Solver: ap3xsh0t
 
 ## Category: Forensics
 
