@@ -1,6 +1,5 @@
 Do Not Stop
 =====
-#### Solver: ap3xsh0t
 
 ## Category: Networking
 
