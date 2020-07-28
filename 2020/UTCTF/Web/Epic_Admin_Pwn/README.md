@@ -1,6 +1,5 @@
 Epic Admin Pwn
 =====
-#### Solver: ap3xsh0t
 
 ## Category: Web
 
