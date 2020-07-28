@@ -1,6 +1,5 @@
 Spooky Store
 =====
-#### Solver: ap3xsh0t
 
 ## Category: Web
 
