@@ -1,8 +1,6 @@
 Nittaku 3 Star Premium
 =====
 
-#### Solver: ap3xsh0t
-
 ## Category: Networking
 
 > "I found some weird data while monitoring my network, but I didn't catch it all. See if you can make sense of it."
